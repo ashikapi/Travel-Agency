@@ -25,7 +25,7 @@ const Heros = () => {
 
 
       </div>
-      <div className='lg:w-[1000px] lg:h-[250px] bg-white rounded-md flex justify-center items-center text-center lg:pt-20 pt-5 lg:pb-20 pb-5 lg:-mt-28 -mt-20 ml-10 lg:mr-0 mr-10 lg:ml-[250px]'>
+      <div className='lg:w-[1000px] lg:h-[250px] bg-white rounded-md flex justify-center items-center text-center lg:pt-20 pt-5 lg:pb-20 pb-5 lg:-mt-28 -mt-20 ml-10 lg:mr-0 mr-10 lg:ml-[320px]'>
         {/* mapping the data */}
         <div>{details.map((detail, index) => (
           <ul className='' key={index}>
