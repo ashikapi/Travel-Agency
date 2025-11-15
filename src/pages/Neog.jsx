@@ -72,16 +72,17 @@ const Neog = () => {
                     <h1 className='lg:text-5xl text-xl text-black font-bold'>আমাদের বিভাগসমূহ</h1>
                     <p className='lg:text-xl text-sm'>আপনার আগ্রহ এবং যোগ্যতা অনুযায়ী বিভিন্ন বিভাগের পদগুলো দেখুন।</p>
                 </div>
-                <div className='lg:grid lg:grid-cols-2 lg:gap-20 flex flex-col justify-center items-center gap-16'>
+                <div className='lg:grid lg:grid-cols-2 lg:gap-28 flex flex-col justify-center items-center gap-16'>
                     {/* Mapping the data */}
                     {category.map((cata, index) => (
                         <div key={index}>
                             {/* Banner image */}
-                            <img className='border-2 border-gray-500 bg-[rgba(0,0,0,0.6)] bg-blend-overlay rounded-4xl mt-15 lg:w-[600px]' src={cata.banner} alt="" />
-                            <div className="lg:w-96 w-80 p-6 bg-gradient-to-r from-green-100 to-orange-300  flex justify-evenly items-center text-white font-bold lg:ml-28 ml-10 -mt-10 rounded-tl-full rounded-br-full absolute">
+                            <img className='border-2 border-gray-500 bg-[rgba(0,0,0,0.6)] bg-blend-overlay rounded-4xl mt-15 lg:w-[600px] lg:h-[500px] object-cover' src={cata.banner} alt="" />
+                            <div className="w-[600px] p-2 bg-[#87CEEB] flex justify-evenly items-center text-black font-bold absolute object-cover">
                                 {/* Button for details and contact */}
-                                <button onClick={() => handelModelOpen(cata)} className="lg:px-6 lg:py-3 px-3 py-2 bg-cyan-950 rounded-md">বিস্তারিত</button>
-                                <button onClick={openModel} className="lg:p-3 p-2 bg-cyan-500 rounded-md">যোগাযোগ</button>
+                                <button onClick={() => handelModelOpen(cata)} className="lg:px-6 lg:py-3 px-3 py-2">বিস্তারিত</button>
+                                <div className="pl-10 rotate-90 border"></div>
+                                <button onClick={openModel} className="lg:p-3 p-2 rounded-md">যোগাযোগ</button>
                             </div>
                         </div>
                     ))}
