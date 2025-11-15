@@ -77,11 +77,11 @@ const Neog = () => {
                     {category.map((cata, index) => (
                         <div key={index}>
                             {/* Banner image */}
-                            <img className='border-2 border-gray-500 bg-[rgba(0,0,0,0.6)] bg-blend-overlay rounded-4xl mt-15 lg:w-[600px] lg:h-[500px] object-cover' src={cata.banner} alt="" />
-                            <div className="w-[600px] p-2 bg-[#87CEEB] flex justify-evenly items-center text-black font-bold absolute object-cover">
+                            <img className='border-2 rounded-t-xl border-gray-500 bg-[rgba(0,0,0,0.6)] bg-blend-overlay rounded-4xl mt-15 lg:w-[600px] lg:h-[500px] object-cover' src={cata.banner} alt="" />
+                            <div className="w-[600px] p-2 rounded-b-xl bg-[#87CEEB] flex justify-evenly items-center text-black font-bold absolute object-cover">
                                 {/* Button for details and contact */}
                                 <button onClick={() => handelModelOpen(cata)} className="lg:px-6 lg:py-3 px-3 py-2">বিস্তারিত</button>
-                                <div className="pl-10 rotate-90 border"></div>
+                                <div className="pl-12 rotate-90 border border-gray-200 border-opacity-50"></div>
                                 <button onClick={openModel} className="lg:p-3 p-2 rounded-md">যোগাযোগ</button>
                             </div>
                         </div>
